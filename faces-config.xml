@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+ <navigation-rule>
+  <from-view-id>/register.xhtml</from-view-id>
+  <navigation-case>
+   <from-action>#{logComp.add}</from-action>
+   <from-outcome>main</from-outcome>
+   <to-view-id>main.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-action>#{logComp.add}</from-action>
+   <from-outcome>invalid</from-outcome>
+   <to-view-id>error.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/index.xhtml</from-view-id>
+  <navigation-case>
+   <from-action>#{logComp.getUserId}</from-action>
+   <from-outcome>0</from-outcome>
+   <to-view-id>error.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-action>#{logComp.getUserId}</from-action>
+   <to-view-id>main.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/main.xhtml</from-view-id>
+  <navigation-case>
+   <from-action>#{event.addComment}</from-action>
+   <to-view-id>comment.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ 
+ <navigation-rule>
+  <from-view-id>/main.xhtml</from-view-id>
+  <navigation-case>
+     <from-outcome>out</from-outcome>
+   <to-view-id>index.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+   
+    <navigation-rule>
+  <from-view-id>/addevent.xhtml</from-view-id>
+  <navigation-case>
+     <from-outcome>out</from-outcome>
+   <to-view-id>index.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ 
+  <navigation-rule>
+  <from-view-id>/createevent.xhtml</from-view-id>
+  <navigation-case>
+     <from-outcome>out</from-outcome>
+   <to-view-id>index.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ 
+ <application/>
+</faces-config>
