@@ -1,0 +1,162 @@
+#top {
+	
+  vertical-align: center;
+ float: center;
+  width: 25%;
+}
+
+#left {
+	position: relative;
+	float: top;
+	padding: 20px;
+	 width: 25%;
+}
+
+
+#right {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     align-items: center;
+   
+    background-color: #A2BEEE;
+}
+
+.flex-item {
+    background-color: #A2BEEE;
+     float: center;
+   
+    margin: 5px;
+}
+
+
+ 
+#mainform{
+	background-color: blue;
+	
+}
+
+.text{
+	padding: 10px;
+	color: white;
+	
+	
+}
+
+.button{
+	padding: 5px;
+	margin: 5px;
+	border-radius: 28px;
+	background-color: #80A6E6;
+	 color: #585826;
+}
+.button:hover { 
+    background-color: yellow;
+    -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.9s ease-in-out;
+}
+
+.textfield{
+	
+   padding: 5px;
+   margin: 5px;
+   border-radius: 5px;
+}
+
+#main { display: flex; }
+#main > article { 
+	order: 2; 
+	min-width: 12em; 
+	min-height: 300px;
+	flex:1; 
+	background-color: blue;
+	}
+#main > nav     { 
+	order: 1; 
+	width: 150px; 
+	background-color: #A2BEEE;
+	}
+#main > aside   { 
+	order: 3; 
+	width: 200px; 
+	background-color: #A2BEEE;
+	}
+	
+.fot  { 
+   
+   min-height: 50px; 
+   
+   background-color: #A2BEEE;
+   }
+   
+
+   
+   @CHARSET "ISO-8859-1";
+   .faceTable{
+	border-collapse:collapse;
+	border-bottom:1px solid #000000;
+}
+	.faceTableHeader{
+	text-align:center;
+	background:none repeat scroll 0 0 #5073AF;
+	border-bottom:1px solid #000000;
+	border-top:1px solid #000000;
+   padding:2px;
+   color: #F7E543;
+}
+   .faceTableOddRow{
+   background:none repeat scroll 0 0 blue;
+   color: #FCFBEE;
+   padding: 3px;
+} 
+   .faceTableEvenRow{
+   background:none repeat scroll 0 0 #D3D3FF;
+   color: #40403B;
+}
+
+.error {
+   color:red;
+}
+
+
+   @CHARSET "ISO-8859-1";
+   .faceComTable{
+   border-collapse:collapse;
+   border-bottom:1px solid #000000;
+}
+   .faceComTableHeader{
+   text-align:center;
+   background:none repeat scroll 0 0 #5073AF;
+   border-bottom:1px solid #000000;
+   border-top:1px solid #000000;
+   padding:2px;
+   color: #F7E543;
+}
+   .faceComTableOddRow{
+   background:none repeat scroll 0 0 #008CFF;
+   padding: 5px;
+   
+} 
+   .faceComTableEvenRow{
+   background:none repeat scroll 0 0 #a9bcd1;
+   
+}
+.textArea{
+	border:0px;
+	width: 200px; 
+	background: transparent;
+	color: #40403B;
+	padding: 3px;
+   margin: 3px;
+	
+}
+.textColumn{
+	padding: 5px;
+}
+
